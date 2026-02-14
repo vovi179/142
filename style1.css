@@ -23,6 +23,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--bg-color);
   overflow: hidden;
   perspective: 1000px;
@@ -48,6 +49,16 @@ body {
   /* Center the image */
   background-repeat: no-repeat;
   /* Prevent tiling */
+}
+
+@media (max-width: 600px) {
+  .flowers {
+    transform: scale(0.7) translateY(5vmin);
+  }
+
+  .flower {
+    bottom: 5vmin;
+  }
 }
 
 .flowers {
